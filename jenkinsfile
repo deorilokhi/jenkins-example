@@ -4,15 +4,14 @@ pipeline {
         stage ('Compile Stage') {
             steps {
                 withMaven(maven : 'apache-maven-3.3.9') {
-                    echo "jdk installation path"
+                    
                 }
             }
         }
         stage ('Testing Stage') {
             steps {
                 withMaven(maven : 'apache-maven-3.3.9') {
-                    echo "jdk installation path"
-                
+                    
                 }
             }
         }
